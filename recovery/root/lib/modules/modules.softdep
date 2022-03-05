@@ -1,0 +1,35 @@
+# Soft dependencies extracted from modules themselves.
+softdep phy_exynos_usbdrd_super post:dwc3-exynos-usb
+softdep exynos_pd_el3 pre: exynos-el2
+softdep sec_hard_reset_hook pre: pinctrl-samsung-core
+softdep stm_ts_spi pre: acpm-mfd-bus
+softdep tsl2510 pre: sensors_core
+softdep softdog pre: s3c2410_wdt
+softdep fimc_is pre: cmupmucal clk_exynos exynos-pmu-if pinctrl-samsung-core pcie-exynos-rc phy-exynos-mipi samsung-iommu samsung-iommu-group
+softdep mcd_panel pre: s2dos05-regulator i2c-exynos5
+softdep is_laser_af_vl53l5 pre: fimc-is
+softdep is_cis_imx563 pre: fimc-is
+softdep dwc3_exynos_usb pre:phy-exynos-usbdrd-super
+softdep tsmux pre: repeater
+softdep exynos_devfreq pre: exynos_dm exynos_thermal  post: exynos-acme mali_kbase
+softdep sec_ts pre: acpm-mfd-bus
+softdep exynos_afm pre: exynos-acme
+softdep exynos_drm pre: samsung_dma_heap
+softdep exynos_drm pre: samsung_dma_heap
+softdep exynos_drm pre: phy-exynos-mipi
+softdep exynos_ufcc pre: exynos-acme
+softdep is_flash_s2mpb02_i2c pre: fimc-is
+softdep sb_mfc pre: max77705_charger
+softdep mcd_panel_samsung_drv pre: mcd-panel
+softdep vl53l5 pre: s2mpb02-regulator
+softdep is_cis_imx754 pre: fimc-is
+softdep exynos_cm pre: exynos-seh
+softdep sec_pm_debug pre: acpm-mfd-bus
+softdep is_actuator_ak737x pre: fimc-is
+softdep exynos_pd pre: clk_exynos
+softdep samsung_iommu pre: samsung-iommu-group
+softdep is_device_eeprom pre: fimc-is
+softdep exynos_reboot pre: exynos-chipid_v2
+softdep xperf pre: exynos-acme
+softdep exynos_gpu_profiler pre: exynos-migov
+softdep exynos_dsufreq pre: exynos-acme
